@@ -1,0 +1,13 @@
+Marrom escuro: #A41E14
+Marrom claro: #BF6141
+Verde: #5BBF6D
+Preto: #353238
+Branco: #FFFAF3
+
+// ----------------
+
+Preto: #353238
+Vermelho escuro: #E0495D
+Rosa escuro: #F85A75
+Rosa: #FFAFBE
+Branco: #FFFAF3
