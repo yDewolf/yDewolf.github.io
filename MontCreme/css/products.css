@@ -133,4 +133,8 @@
         margin: auto;
         width: 80%;
     }
+
+    .products-div {
+        justify-content: center;
+    }
 }
