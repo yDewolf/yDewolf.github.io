@@ -80,7 +80,10 @@
 }
 
 .product-card {
+    display: grid;
     margin: 5px;
+    width: 165px;
+
     border: solid #553f9b 3px;
     background-color: #fff;
     border-radius: 5px;
@@ -94,16 +97,19 @@
 }
 
 .product-info {
+    display: grid;
     padding: 7px;
     border-top: #553f9b solid 3px;
 }
 
 .product-buttons {
+    margin-top: auto;
     display: flex;
     align-items: center;
 }
 
 .price-label {
+    margin: 0;
     color: #553f9b;
 }
 
@@ -114,6 +120,7 @@
 
     text-align: center;
     border-radius: 5px;
+    margin: 0;
 }
 
 .buy-button:hover {
