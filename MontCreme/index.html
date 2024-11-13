@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en, pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mont Crème</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+    <div class="top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img class="image-fluid logo" src="assets/logo.png" alt="Mont Crème Logo"></a>
+              
+                <div style="display: flex;">
+                    <div class="user-actions mobile">
+                      <a href="#"><img class="navbar-icon xsm-icon" src="assets/cart.png" alt="Carrinho"></a>
+                      <a href="#"><img class="navbar-icon sm-icon" src="assets/user.png" alt="Usuário"></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="products.html">Biscoitos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Eventos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hallowen</a></li>
+                      <li><a class="dropdown-item" href="#">Nat</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="empresa.html">Sobre nós</a>
+                  </li>
+                </ul>
+                <div class="user-actions desktop">
+                    <a href="carrinho.html"><img class="navbar-icon xsm-icon desktop" src="assets/cart.png" alt="Carrinho"></a>
+                    <a href="login.html"><img class="navbar-icon sm-icon desktop" src="assets/user.png" alt="Usuário"></a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="body">
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/banner/carrousel1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/banner/carrousel1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/banner/carrousel1.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="page-content">
+        <div class="columns">
+          <div class="column-left">
+            <p class="titletext">Um pouco sobre nós</p>
+            <p>A Mont Crème é reconhecida por sua capacidade única de unir tradição e inovação. Mantemos uma linha de biscoitos artesanais, feita com os mesmos cuidados e processos que garantiram o sucesso da marca desde seus primeiros dias. </p>
+            <p>Com mais de 90 anos de história, combina a rica tradição da confeitaria francesa com a excelência da produção industrial contemporânea. Fundada em 1932 por Pierre e Simone Dubois, imigrantes franceses que trouxeram consigo a herança de uma longa linhagem de confeiteiros, a Mont Crème teve seu início em uma pequena loja no interior de São Paulo, onde o casal começou a produzir biscoitos artesanais de altíssima qualidade, inspirados nas receitas familiares de sua terra natal.</p>
+          </div>
+  
+          <div class="column-right">
+            <img class="imgindex-fluid w-80" src="assets/imgindex.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin: 30px;">
+        <h5>Produtos recomendados</h4>
+        <div class="product-recommendations">
+          <div class="product-card">
+            <a href="#">
+              <img class="product-img" src="assets/products/artesanal/bisctArtesanal_emblgem.png" alt="">
+            </a>
+            <div class="product-info">
+              <h5>Produto</h5>
+              <div class="product-buttons columns">
+                <label class="column-left price-label" for="">R$00,00</label>
+                <a class="column-right buy-button" href="">Comprar</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <a href="#">
+              <img class="product-img" src="assets/products/artesanal/bisctArtesanal_emblgem.png" alt="">
+            </a>
+            <div class="product-info">
+              <h5>Produto</h5>
+              <div class="product-buttons columns">
+                <label class="column-left price-label" for="">R$00,00</label>
+                <a class="column-right buy-button" href="">Comprar</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="product-card">
+            <a href="#">
+              <img class="product-img" src="assets/products/artesanal/bisctArtesanal_emblgem.png" alt="">
+            </a>
+            <div class="product-info">
+              <h5>Produto</h5>
+              <div class="product-buttons columns">
+                <label class="column-left price-label" for="">R$00,00</label>
+                <a class="column-right buy-button" href="">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer class="">
+      <h4>Todos os direitos reservados Mont Crème</h4>
+      <hr class="footer-split">
+      <div class="footer-columns">
+        <div class="column footer-empres">
+          <h2>Sobre nós</h2>
+          <p>Bem-vindo à Mont Crème, uma indústria de biscoitos que, tem como missão proporcionar experiências únicas através de sabores irresistíveis. Situada no coração de Crocantópolis, nossa história é marcada por amor à culinária, compromisso com a qualidade e inovação constante.</p>
+        </div>
+        <hr class="footer-split mobile">
+        <div class="column footer-socials">
+          <h2>Contatos</h2>
+          <ul>
+            <li>
+              <div class="social">
+                <img class="footer-icon" src="assets/icons/instagram.png" alt="Instagram:">
+                 @Mont.Crème
+              </div>
+            </li>
+            <li>
+              <div class="social">
+                <img class="footer-icon" src="assets/icons/email.png" alt="Email:">
+                 montcreme.comercial@email.com
+              </div>
+            </li>
+            <li>
+              <div class="social">
+                <img class="footer-icon" src="assets/icons/whatsapp.png" alt="Whatsapp:">
+                 +55 149912193
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

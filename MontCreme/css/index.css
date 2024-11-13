@@ -1,0 +1,43 @@
+.page-content {
+    margin: 60px 100px;
+}
+
+.product-recommendations {
+    margin: auto;
+    width: fit-content;
+    display: flex;
+}
+
+.column-left, .column-right {
+    margin: 0 15px;
+}
+
+.imgindex-fluid{
+    width: 90%;
+}
+
+.titletext{
+    text-align: center;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 990px) {
+    .column-left, .column-right {
+        margin: 0;
+    }
+
+    .imgindex-fluid{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 700px) {
+    .page-content {
+        margin: 30px 30px;
+    }
+
+    .product-recommendations {
+        display: block;
+    }
+}

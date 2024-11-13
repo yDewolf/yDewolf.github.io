@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body{
+    margin: 30px 150px;
+}
+
+.content {
+    margin: 0 15px;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.titletext{
+    text-align: center;
+    font-weight: bold;
+}
+
+.brandimg{
+    display: block;
+    margin: auto;
+    height: 300px;
+    margin-top: 4%;
+}
+
+
+.divisor{ 
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 90%;
+    height: 3px;
+    background-color: black ;
+}
+
+@media only screen and (max-width: 1440px) {
+    .brandimg {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        margin: 0;
+    }
+    
+    .body {
+        margin: 30px 30px;
+    }
+    .brandimg {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .body {
+        margin: 30px 15px;
+    }
+}

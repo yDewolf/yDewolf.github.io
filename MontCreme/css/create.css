@@ -1,0 +1,35 @@
+.create{
+    width: 60%;
+    margin: 50px auto;
+    border: #553f9b solid 10px;
+    border-radius: 10px;
+    background-color: #553f9b;
+}
+
+.create-account {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #553f9b;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    .create-account {
+        width: 85%;
+    }
+
+    .form-row {
+        display: block;
+    }
+
+    .smal_input {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .fixed {
+        position: relative;
+    }
+}
