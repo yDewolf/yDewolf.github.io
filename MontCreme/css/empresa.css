@@ -21,7 +21,7 @@
     display: block;
     margin: auto;
     height: 300px;
-    margin-top: 4%;
+    margin-top: 8%;
 }
 
 
@@ -59,3 +59,11 @@
         margin: 30px 15px;
     }
 }
+
+@media only screen and (min-width: 1242px) {
+    
+    .brandimg{
+        margin-top: 10%;
+    }
+}
+

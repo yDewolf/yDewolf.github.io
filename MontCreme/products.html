@@ -61,11 +61,11 @@
         <ul class="dropdown-menu filter-dropdown-menu">
           <li class="dropdown-item filter-row">
             <label class="input-label filter-label" for="">Integral</label>
-            <input class="filter-checkbox" type="checkbox" name="" id="">
+            <input class="filter-checkbox" type="checkbox" name="industrial">
           </li>
           <li class="dropdown-item filter-row">
             <label class="input-label filter-label" for="">Artesanal</label>
-            <input class="filter-checkbox" type="checkbox" name="" id="">
+            <input class="filter-checkbox" type="checkbox" name="artesanal">
           </li>
         </ul>
 
@@ -73,23 +73,23 @@
         <ul class="filter-type">
           <li class="filter-row">
             <label class="input-label filter-label" for="">Pizza</label>
-            <input class="filter-checkbox" type="checkbox" name="" id="">
+            <input class="filter-checkbox" type="checkbox" name="">
             <label for="product-qnt">(#)</label>
           </li>
           <li class="filter-row">
             <label class="input-label filter-label" for="">Morango</label>
-            <input class="filter-checkbox" type="checkbox" name="" id="">
+            <input class="filter-checkbox" type="checkbox" name="">
             <label for="product-qnt">(#)</label>
           </li>
           <li class="filter-row">
             <label class="input-label filter-label" for="">Tradicional</label>
-            <input class="filter-checkbox" type="checkbox" name="" id="">
+            <input class="filter-checkbox" type="checkbox" name="">
             <label for="product-qnt">(#)</label>
           </li>
         </ul>
       </div>
       <div class="products-div column-right">
-        <div class="product-card">
+        <div class="product-card artesanal">
           <img class="product-img" src="assets/products/artesanal/bisctArtesanal_emblgem.png" alt="">
           <div class="product-info">
             <h5>Biscoitos artesanais</h5>
@@ -100,7 +100,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card artesanal">
           <img class="product-img" src="assets/products/artesanal/bisctArtesanal_medio.png" alt="">
           <div class="product-info">
             <h5>Biscoito artesanal de chocolate</h5>
@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card industrial">
           <img class="product-img" src="assets/products/industrial/bisctIndstrial_integral2.png" alt="">
           <div class="product-info">
             <h5>Biscoito integral</h5>
@@ -122,7 +122,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card industrial">
           <img class="product-img" src="assets/products/industrial/bisctIndstrial_integral1.png" alt="">
           <div class="product-info">
             <h5>Biscoito integral 2</h5>
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card artesanal">
           <img class="product-img" src="assets/products/artesanal/bisctArtesanal_undde.png" alt="">
           <div class="product-info">
             <h5>Biscoito Artesanal Unidade</h5>
@@ -144,7 +144,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card industrial">
           <img class="product-img" src="assets/products/industrial/bisctIndstrial_padrao1.png" alt="">
           <div class="product-info">
             <h5>Biscoito Tradicional</h5>
@@ -155,7 +155,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card industrial">
           <img class="product-img" src="assets/products/industrial/bisctIndstrial_padrao2.png" alt="">
           <div class="product-info">
             <h5>Biscoito Tradicional 2</h5>
@@ -166,7 +166,7 @@
           </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card industrial">
           <img class="product-img" src="assets/products/industrial/bisctIndstrial_pizza1.png" alt="">
           <div class="product-info">
             <h5>Biscoito sabor Pizza</h5>
@@ -182,6 +182,7 @@
         </div>
       </div>
     </div>
+    
 
     <footer class="">
       <h4>Todos os direitos reservados Mont Crème</h4>
@@ -217,6 +218,60 @@
         </div>
       </div>
     </footer>
+    
+    <script>
+      const all_cards = document.getElementsByClassName("product-card")
+      let active_filters = []
+
+      connect_filter_checkboxes()
+
+      function update_filtered(all_elements) {
+        for (const element of all_elements) {
+          let show = false
+          if (active_filters.length == 0) {
+            show = true
+          } 
+          else {
+            for (const filter of active_filters) {
+              if (element.className.includes(filter) | active_filters.length == 0) {
+                show = true
+                break
+              }
+            }
+          }
+
+
+          if (!show) {
+            element.style.display = "none"
+            continue
+          }
+          element.style.display = "grid"
+        }
+      }
+
+      function connect_filter_checkboxes() {
+        const checkboxes = document.getElementsByClassName("filter-checkbox")
+        for (const checkbox of checkboxes) {
+          if (checkbox.name == "") {
+            break
+          }
+          checkbox.addEventListener("click", function() {apply_filter(checkbox.name)})
+        }
+
+        return checkboxes
+      }
+
+      function apply_filter(filter) {
+        if (active_filters.includes(filter)) {
+          active_filters.pop(filter)
+        }
+        else {
+          active_filters.push(filter)
+        }
+
+        update_filtered(all_cards)
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
