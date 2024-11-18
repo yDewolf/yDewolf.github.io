@@ -3,6 +3,8 @@
     display: flex;
 }
 
+
+
 /* .cart-div, .options {
     height: 300px;
 } */
@@ -76,5 +78,12 @@
 
     .options {
         margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .product-image{
+        height: auto;
+        width: 8%;
     }
 }
