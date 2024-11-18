@@ -141,6 +141,7 @@ footer {
     }
 
     .products-div {
+        margin: auto;
         justify-content: center;
     }
 }
