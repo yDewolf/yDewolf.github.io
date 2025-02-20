@@ -1,0 +1,147 @@
+:root {
+    --card-border-radius: 30px;
+    --card-border-size: 2px;
+    --image-border-radius: calc(var(--card-border-radius) - var(--card-border-size))
+}
+
+.content {
+    margin: 20px;
+}
+
+.search-form {
+    margin: auto;
+    display: grid;
+
+    align-items: center;
+    width: fit-content;
+
+    span {
+        margin-left: auto;
+    }
+}
+
+.search-field {
+    align-items: center;
+    margin: 15px auto;
+    display: flex;
+
+    button {
+        padding: 0;
+        width: 40px;
+        border: none;
+        background-color: #ffffff00;
+    }
+}
+
+.category-list, .professionals {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-list {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.category {
+    align-items: end;
+    text-align: center;
+
+    display: grid;
+
+    margin: 15px auto;
+    width: 250px;
+    height: 125px;
+
+    border-radius: 30px;
+    border: solid 2px var(--main-blue);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    label {
+        --text-border-color: black;
+        --text-border-size: 2px;
+        text-shadow: var(--text-border-size) 0 var(--text-border-color), calc(-1 * var(--text-border-size)) 0 var(--text-border-color), 0 var(--text-border-size) var(--text-border-color), 0 calc(-1 * var(--text-border-size)) var(--text-border-color),
+             1px 1px var(--text-border-color), -1px -1px var(--text-border-color), 1px -1px var(--text-border-color), -1px 1px var(--text-border-color);
+        color: var(--white);
+    }
+}
+
+.professionals {
+    margin: auto;
+
+    margin-top: 30px;
+}
+
+.professional-card {
+    display: flex;
+    border: solid 2px var(--dark-main-blue);
+    margin: 15px auto;
+
+    border-radius: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: auto;
+}
+
+.card-info {
+    display: grid;
+    margin: 15px;
+}
+
+.professional-profile {
+    width: 175px;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: var(--image-border-radius);
+    border-bottom-left-radius: var(--image-border-radius);
+}
+
+@media only screen and (min-width: 1921px) {
+    .category {
+        width: 425px;
+        height: 225px;
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .category {
+        width: 350px;
+        height: 175px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .category {
+        width: 250px;
+        height: 125px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .category-list, .professionals {
+        display: block;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+
+    .professionals {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .professional-profile {
+        width: 125px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .professional-profile {
+        width: 75px;
+    }
+}

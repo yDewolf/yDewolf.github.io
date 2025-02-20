@@ -1,0 +1,37 @@
+.info-holder {
+    margin: 30px;
+}
+
+.info {
+    align-items: center;
+    margin: 10px auto;
+    width: 50%;
+
+    display: flex;
+    color: var(--light-main-blue);
+
+    h2 {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+.info-icon {
+    margin: auto 20px;
+    --icon-size: 100px;
+
+    width: var(--icon-size);
+    height: var(--icon-size);
+}
+
+@media only screen and (max-width: 990px) {
+    .info {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .info {
+        width: 90%;
+    }
+}

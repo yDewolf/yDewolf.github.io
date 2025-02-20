@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --main-blue: #356bb4;
+    --dark-main-blue: #1f4974;
+    --light-main-blue: #507dbb;
+    --white: #fff;
+    --default-border-radius: 12px;
+    --navbar-height: 120px;
+    --navbar-border-size: 5px;
+    --usable-screen-height: calc(100vh - (var(--navbar-height) + var(--navbar-border-size)));
+
+    --font-very-big: 38px;
+    --font-big: 34px;
+    --font-medium: 30px;
+    --font-normal: 25px;
+    --font-small: 20px;
+    --font-very-small: 16px
+}
+
+body {
+    font-family: "Alice";
+
+    p {
+        text-align: justify;
+        font-size: 16px;
+    }
+}
+
+.column-row {
+    display: flex;
+}
+
+.column-left, .column-right {
+    margin: auto;
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.form-rows {
+    margin: auto;
+    width: 300px;
+}
+
+.form-row {
+    align-items: center;
+    margin-bottom: 7px;
+
+    display: flex;
+    label {
+        margin-right: auto;
+        
+    }
+
+    input {
+        padding: 2px 3px;
+        height: calc(var(--font-normal) + 5px);
+        border-radius: var(--default-border-radius);
+        border: none;
+    }
+}
+
+.submit-button {
+    margin-top: 15px;
+    font-size: var(--font-small);
+
+    height: 30px;
+    width: 75px;
+    
+    font-family: "Alice";
+    background-color: var(--white);
+    border-radius: var(--default-border-radius);
+    border: none;
+}
+
+.wide-button {
+    width: 150px !important;
+}
+
+.banner {
+    width: 100%;
+}
+
+.vertical-line, .horizontal-line {
+    background-color: var(--dark-main-blue);
+    border: none;
+    border-radius: 3px;
+}
+
+.vertical-line {
+    width: 3px;
+    height: 25px;
+    margin: 0 auto;
+    
+    opacity: 1.0;
+}
+
+.horizontal-line {
+    height: 3px;
+    width: 100%;
+    margin: 0;
+
+    opacity: 1.0;
+}
+
+.search-bar {
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+
+    border-radius: 30px;
+    border: solid var(--dark-main-blue) 1px;
+}
+
+.search-icon {
+    width: 32px;
+}
+
+select {
+    border-radius: 30px;
+    height: 30px;
+}
+
+.mobile {
+    display: none;
+    width: 0;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1921px) {
+    .wide-button {
+        width: 250px !important;
+    }
+
+    .submit-button {
+        width: 150px;
+        height: calc(var(--font-big) + 20px);
+
+        font-size: var(--font-big);
+    }
+
+    .form-rows {
+        width: 500px;
+        input {
+            width: 350px;
+            height: calc(var(--font-very-big) + 5px);;
+        }
+    }
+
+    .search-bar {
+        height: 60px;
+        width: 700px;
+        font-size: var(--font-normal);
+    }
+
+    body {
+        h1 {
+            font-size: calc(var(--font-very-big) + 7px);
+        }
+
+        h2 {
+            font-size: calc(var(--font-very-big) + 5px);
+        }
+
+        h3 {
+            font-size: calc(var(--font-big) + 5px);
+        }
+
+        p {
+            font-size: calc(var(--font-medium) + 5px);
+        }
+
+        label {
+            font-size: calc(var(--font-medium) + 5px);
+        }
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    body {
+        h1 {
+            font-size: var(--font-very-big);
+        }
+
+        h2 {
+            font-size: var(--font-big);
+        }
+
+        h3 {
+            font-size: var(--font-medium);
+        }
+
+        p {
+            font-size: var(--font-normal);
+        }
+
+        label {
+            font-size: var(--font-normal);
+        }
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        h1 {
+            font-size: var(--font-big);
+        }
+
+        h2 {
+            font-size: var(--font-medium);
+        }
+
+        h3 {
+            font-size: var(--font-normal);
+        }
+
+        p {
+            font-size: var(--font-small);
+        }
+
+        label {
+            font-size: var(--font-small);
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    body {
+        h1 {
+            font-size: var(--font-medium);
+        }
+
+        h2 {
+            font-size: var(--font-normal);
+        }
+
+        h3 {
+            font-size: var(--font-small);
+        }
+
+        p {
+            font-size: var(--font-very-small);
+        }
+
+        label {
+            font-size: var(--font-very-small);
+        }
+    }
+    
+    .desktop {
+        display: none;
+        width: 0;
+        height: 0;
+        margin: 0;
+    }
+
+    .mobile {
+        width: auto;
+        display: inline;
+    }
+
+    .column-row {
+        display: block;
+    }
+
+    .column-left, .column-right {
+        width: 100% !important; 
+    }
+}

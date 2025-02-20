@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+}
+
+.navbar-div {
+    padding: 0;
+    min-height: var(--navbar-height);
+    display: flex;
+
+    background-color: var(--main-blue);
+    border-bottom: var(--navbar-border-size) solid var(--dark-main-blue);
+}
+
+.navbar-icons {
+    display: flex;
+    margin-right: auto;
+}
+
+.navbar-icon {
+    margin: auto 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-logo {
+    width: 100px;
+}
+
+.navbar-link {
+    font-family: "Alice";
+    margin: auto;
+
+    text-decoration: none;
+    font-size: var(--font-normal);
+
+    color: var(--white);
+}
+
+.nav-item {
+    margin: auto;
+}
+
+.navbar-nav {
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 1921px) {
+    .navbar-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .navbar-link {
+        font-size: var(--font-very-big);
+    }
+}
+
+@media only screen and (max-width: 1920px) {
+    .navbar-link {
+        font-size: var(--font-medium);
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .navbar-link {
+        font-size: var(--font-normal);
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar-link {
+        font-size: var(--font-normal);
+    }
+
+    .nav-item {
+        margin-left: 0;
+    }
+
+    .navbar-icons {
+        margin-left: auto;
+        margin-right: 7px;
+    }
+
+    .navbar-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar-icon {
+        margin: auto 7px;
+        width: 35px;
+        height: 35px;
+    }
+}

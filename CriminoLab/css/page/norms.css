@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+.content {
+    margin: 0 20px;
+}
+
+.info-icon {
+    width: 60px;
+}
+
+.info {
+    width: 70%;
+}
+
+
+@media only screen and (max-width: 660px) {
+    .info {
+        width: 100%;
+    }
+}

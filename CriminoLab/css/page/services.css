@@ -1,0 +1,67 @@
+.services-div {
+    margin: 0;
+    text-align: center;
+    width: 30%;
+
+    border-right: solid var(--main-blue) 5px;
+    height: var(--usable-screen-height);
+
+    h2 {
+        margin-top: 30px;
+        color: var(--dark-main-blue);
+    }
+}
+
+.service-list {
+    padding: 0 20px;
+}
+
+.service-redirect {
+    text-decoration: none;
+}
+
+.service {
+    align-items: center;
+    padding: 10px 0;
+    color: black;
+
+    .vertical-line {
+        margin: 0 5px;
+        background-color: var(--main-blue);
+    }
+
+    label[for="name"] {
+        width: 40%;
+    }
+
+    label[for="name"], label[for="service-name"] {
+        text-align: left;
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.service-profile-icon {
+    width: 45px;
+    margin-right: 5px;
+}
+
+.document {
+    width: 70%;
+    display: flex;
+
+    height: var(--usable-screen-height);
+    align-items: center;
+}
+
+.document-content {
+    margin: auto;
+
+    width: 70%;
+    max-width: 768px;
+    height: 90%;
+
+    border: solid var(--dark-main-blue) 3px;
+}

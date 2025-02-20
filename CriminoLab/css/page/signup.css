@@ -1,0 +1,70 @@
+h1, h3 {
+    font-family: "Alice";
+}
+
+.content {
+    height: var(--usable-screen-height);
+}
+
+.login-background, .signup-background {
+    margin: 0;
+    align-items: center;
+    display: grid;
+
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.login-background {
+    width: 35%;
+    background-color: var(--dark-main-blue);
+}
+
+.signup-background {
+    width: 65%;
+}
+
+.login-div {
+    margin: auto;
+    width: 100%;
+
+    color: var(--white);
+}
+
+.signup-div {
+    margin: 0 auto;
+
+    h1 {
+        color: var(--light-main-blue);
+    }
+
+    h3 {
+        font-weight: normal;
+    }
+
+    input, button {
+        color: var(--white);
+        background-color: var(--dark-main-blue);
+    }
+}
+
+.spec-icons {
+    margin: auto;
+    margin-bottom: 15px;
+
+    width: 250px;
+    display: flex;
+}
+
+.spec-icon {
+    margin: auto;
+    img {
+        width: 45px;
+    }
+}
+
+.selected-spec {
+    img {
+        width: 60px;
+    }
+}
