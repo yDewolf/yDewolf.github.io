@@ -130,6 +130,58 @@ select {
     margin: 0;
 }
 
+footer {
+    background-color: var(--dark-main-blue);
+    color: var(--white);
+
+    .vertical-line {
+        margin: 10px;
+
+        background-color: var(--main-blue);
+        height: auto;
+    }
+    ul {
+        list-style: none;
+    }
+
+    p {
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+
+.footer-div {
+    padding: 10px 30px;
+    padding-bottom: 0;
+    border-top: var(--main-blue) solid 3px;
+}
+
+.footer-socials {
+    align-content: center;
+}
+
+.footer-social {
+    align-items: center;
+    display: flex;
+
+    img {
+        margin-right: 5px;
+        width: 30px;
+    }
+}
+
+.footer-links {
+    margin-left: auto;
+}
+
+.footer-link {
+    a {
+        text-decoration: none;
+        color: var(--white);
+    }
+}
+
+
 @media only screen and (min-width: 1921px) {
     .wide-button {
         width: 250px !important;
@@ -169,7 +221,7 @@ select {
             font-size: calc(var(--font-big) + 5px);
         }
 
-        p {
+        p, a {
             font-size: calc(var(--font-medium) + 5px);
         }
 
@@ -193,7 +245,7 @@ select {
             font-size: var(--font-medium);
         }
 
-        p {
+        p, a {
             font-size: var(--font-normal);
         }
 
@@ -217,7 +269,7 @@ select {
             font-size: var(--font-normal);
         }
 
-        p {
+        p, a {
             font-size: var(--font-small);
         }
 
@@ -241,7 +293,7 @@ select {
             font-size: var(--font-small);
         }
 
-        p {
+        p, a {
             font-size: var(--font-very-small);
         }
 
