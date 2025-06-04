@@ -24,6 +24,11 @@
     align-items: center;
 }
 
+.nav-left {
+    justify-content: space-between;
+    display: flex;
+}
+
 .navbar-logo {
     height: var(--navbar-logo-height);
 
@@ -54,7 +59,7 @@
 }
 
 .nav-item {
-    
+    transition: position 0.5s linear;
     padding: 5px 10px;
 
     font-size: 18px;
@@ -75,6 +80,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .nav-left {
+        width: 100%;
+    }
+
     .navbar {
         flex-direction: column;
         padding: 10px 15px;

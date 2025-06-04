@@ -8,7 +8,7 @@
     min-width: 160px;
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 
     display: none;
     flex-direction: column;
@@ -36,8 +36,21 @@
     color: var(--secondary-color)
 }
 
+@keyframes drop-menu {
+    0% {
+        max-height: 0;
+    }
+
+    100% {
+        max-height: 100vh;
+    }
+}
+
 .dropdown:hover .dropdown-content {
+    animation: drop-menu 0.75s linear;
+    overflow: hidden;
     display: flex;
+    height: fit-content;
 }
 
 @keyframes scroll-background {
@@ -52,11 +65,23 @@
     height: 100vh;
     animation: scroll-background 30s linear infinite;
 
-    position: absolute;
+    position: fixed;
 
     z-index: -1;
     background-attachment: scroll;
     background-repeat: repeat;
 
     overflow: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .right-aligned {
+        left: 0;
+        right: auto;
+    }
+
+    .left-aligned {
+        right: 0;
+        left: auto;
+    }
 }
