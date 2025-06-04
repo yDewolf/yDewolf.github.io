@@ -1,0 +1,13 @@
+:root {
+    --main-color: #fff9f7;
+    --light-main-color: #271010;
+    --secondary-color: #ffffff; 
+    --background-color: #1e1e20;
+    --navbar-color: var(--background-color);
+}
+
+.dark-mode-button {
+    img {
+        filter: invert();
+    }
+}
